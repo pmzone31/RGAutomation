@@ -17,7 +17,7 @@ export default function AppForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://qargui.azurewebsites.net/api/http_trigger1?code=fiXhwjKAYqpShMnsDRRdO4WfUCWn8f8Xx-b5lHfIzJhjAzFuMgApHA==', {
+      const response = await fetch('https://qargui.azurewebsites.net/api/http_trigger1', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
